@@ -8,12 +8,12 @@
       margin: 0px;
       font-family: linotype-didot;
       -webkit-font-smoothing: antialiased;
+      color: white;
     }
 
     h1 {
       font-weight: 500;
       font-size: 32pt;
-      color: white;
       margin: 0px;
     }
 
@@ -21,13 +21,11 @@
       font-weight: 400;
       font-size: 14pt;
       font-style: italic;
-      color: white;
     }
 
     .nav {
       padding: 50px;
       display: flex;
-      color: white;
       align-items: center;
       justify-content: space-between;
     }
@@ -70,6 +68,39 @@
       height: 300px;
       width: 300px;
       border-radius: 25px;
+    }
+
+    p {
+      font-size: 16pt;
+    }
+
+    .flicker {
+      padding-top: 25px;
+      background-color: black;
+      transition: all 0.25s;
+      border-radius: 5px;
+      text-underline-offset: 10px;
+      flex: 1;
+    }
+
+    .flicker:hover h1 {
+      /* background-color: #fcedb6; */
+      /* background-color: #021229; */
+      /* color: black; */
+      text-decoration: underline;
+    }
+
+    .flicker:hover p {
+      /* font-size: 20pt; */
+    }
+
+    .flicker:hover {
+      background-color: #fcedb6;
+      /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.7)), url(https://thumbs.dreamstime.com/b/upset-man-standing-his-hand-holding-his-forehead-white-background-31240384.jpg);
+      background-size: cover; */
+      /* background-color: #021229; */
+      color: black;
+      flex: 2;
     }
 
     @media (max-width: 1050px) { /*Sum of container padding and internal-container max width*/
@@ -117,7 +148,6 @@
       <div class="header-row">
         <div class="col" style="">
           <img class="title-image" src="/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg">
-            <!-- background-repeat: no-repeat; background-size: cover; background-image: url(/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg); -->
         </div>
         <div class="col" style="position: relative;">
           <h1>
@@ -131,27 +161,27 @@
             a free initial consultation</button>
         </div>
       </div>
-      <div class="row title">
-        <div class="col" style="flex: 1; color: white; text-align: left;">
+      <div class="row title" style="margin-bottom: 0px;">
+        <div class="col" style="flex: 1;">
           <h1 style="font-size: 18pt;">Focus Areas:</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col" style="flex: 1; color:white;">
+        <div class="col flicker">
           <h1>Self</h1>
-          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
             slightly believable. If you are going to use a passage of Lorem Ipsum. </p>
         </div>
-        <div class="col" style="flex: 1; color:white;">
+        <div class="col flicker">
           <h1>Others</h1>
-          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
             slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
         </div>
-        <div class="col" style="flex: 1; color:white;">
+        <div class="col flicker">
           <h1>Career</h1>
-          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
             slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
         </div>
