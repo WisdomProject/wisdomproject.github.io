@@ -1,145 +1,172 @@
 <html>
-  <head>
-    <style>
-      body {
-        background-color: black;
-        padding: 0px;
-        margin: 0px;
-        font-family: linotype-didot;
-        -webkit-font-smoothing: antialiased;
-        /* transition: background-color 1000ms linear; */
-      }
+
+<head>
+  <style>
+    body {
+      background-color: black;
+      padding: 0px;
+      margin: 0px;
+      font-family: linotype-didot;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 32pt;
+      color: white;
+      margin: 0px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 14pt;
+      font-style: italic;
+      color: white;
+    }
+
+    .nav {
+      padding: 50px;
+      display: flex;
+      color: white;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: top;
+      justify-content: left;
+      margin-top: 100px;
+      width: 100%;
+    }
+
+    .row {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      width: 100%;
+    }
+
+    .title {
+      margin-top: 150px;
+      font-style: italic;
+    }
+
+    .col {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .title-image {
+      height: 300px;
+      width: 300px;
+      border-radius: 25px;
+    }
+
+    @media (max-width: 1050px) { /*Sum of container padding and internal-container max width*/
       h1 {
-        font-weight: 400;
-        font-size: 32pt;
-        color: white;
-        margin: 0px;
+        font-size: 3.75vw;
       }
+
       h2 {
-        font-weight: 400;
-        font-size: 16pt;
-        font-style: italic;
-        color: white;
-      }
-      .nav {
-        padding: 50px;
-        display: flex;
-        color: white;
-        align-items: center;
-        justify-content: space-between;
+      font-size: 2vw;
       }
 
-      body:has(.nav-item1:hover) {
-        background: blue;
-        transition: background-color 750ms linear;
+      .title-image {
+        height: 30vw;
+        width: 30vw;
+      }
+    }
+
+
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column;
       }
 
-      body:has(.nav-item2:hover) {
-        background: green;
-        transition: background-color 750ms linear;
+      .header-row {
+        flex-direction: column;
       }
+    }
+  </style>
+</head>
 
-      .profile {
-        background-image: url("/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg");
-        transition: background 10ms linear;
-
-      }
-
-      .profile:hover {
-        background-image: url(/Users/ross/Desktop/PXL_20241030_200012740.jpg);
-        transition: background 10ms linear;
-      }
-
-      body:has(.nav-item:hover) {
-        /* background: red; */
-        /* transition: background-image 1000ms fade-in; */
-        background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,0,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-        animation: AnimateBG 5s linear infinite;
-        background-size: 200% 200%;
-        /*
-        animation-name: AnimateFade, AnimateBG;
-        animation-duration: 1s, 10s;
-        animation-iteration-count: 1, infinite;
-        animation-fill-mode: forwards, none;
-        animation-delay: 0, 1s;
-        animation-timing-function: linear, linear; */
-        /* animation: AnimateFade 5s linear infinite; */
-      }
-
-      @keyframes AnimateFade {
-        0% {
-          background-image: linear-gradient(217deg, rgba(255,0,0,0), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,0,0,0), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,0), rgba(0,0,255,0) 70.71%);
-            background-position: 0% 50%;
-        }
-        100% {
-          background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,0,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-            background-position: 0% 50%;
-        }
-      }
-
-      @keyframes AnimateBG {
-        0% {
-          background-position: 0% 50%;
-        }
-        12.5% {
-          background-position: 0% 0%;
-        }
-        25% {
-          background-position: 50% 0%;
-        }
-        37.5% {
-          background-position: 100% 0%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        62.5% {
-          background-position: 100% 100%;
-        }
-        75% {
-          background-position: 50% 100%;
-        }
-        87.5% {
-          background-position: 0% 100%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="nav">
-      <h1 style="font-size: 24pt;" class="nav-item">Aadit Gupta</h1>
-      <div style="display: flex; align-items: center; justify-content: right;">
-        <div style="color: white; padding: 5px;" class="nav-item1">
-          Pricing
-        </div>
-        <div style="color: white; padding: 5px;" class="nav-item2">
-          Blog
-        </div>
+<body>
+  <div class="nav">
+    <h1 style="font-size: 24pt;" class="nav-item">Aadit Gupta</h1>
+    <div style="display: flex; align-items: center; justify-content: right;">
+      <div style="color: white; padding: 5px;" class="nav-item1">
+        Pricing
+      </div>
+      <div style="color: white; padding: 5px;" class="nav-item2">
+        Blog
       </div>
     </div>
-    <div style="display: flex; align-items: center; justify-content: center; padding-left: 200px; padding-right: 200px; padding-top: 140px;">
-      <div class="profile" style="margin-right: 25px; width: 300px; height: 300px; border-radius: 25px; background-size: 100% 100%;">
-      </div>
-      <div style="align-items: center; display: flex; height: fit-content; padding-left: 25px;">
-        <div style=" width: 600px;">
+  </div>
+  <div class="container">
+    <div class="inner-container" style="max-width: 1000px;">
+      <div class="header-row">
+        <div class="col" style="">
+          <img class="title-image" src="/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg">
+            <!-- background-repeat: no-repeat; background-size: cover; background-image: url(/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg); -->
+        </div>
+        <div class="col" style="position: relative;">
           <h1>
             My name is Aadit Gupta. I believe in evidence based coaching and am a huge nerd. Bottom text.
           </h1>
           <h2>
             Check out my website, which my bigger nerd friend made.
           </h2>
-          <button style="border: none; border-radius: 25px; padding-left: 25px; padding-right:25px; height: 50px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 50px; font-size: 12pt;">Book a free initial consultation</button>
+          <button
+            style="border: none; border-radius: 25px; padding-left: 25px; padding-right: 25px; height: 50px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12pt; position: absolute; bottom: 0px;">Book
+            a free initial consultation</button>
         </div>
       </div>
+      <div class="row title">
+        <div class="col" style="flex: 1; color: white; text-align: left;">
+          <h1 style="font-size: 18pt;">Focus Areas:</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="flex: 1; color:white;">
+          <h1>Self</h1>
+          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum. </p>
+        </div>
+        <div class="col" style="flex: 1; color:white;">
+          <h1>Others</h1>
+          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+        </div>
+        <div class="col" style="flex: 1; color:white;">
+          <h1>Career</h1>
+          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="flex: 3;">
+          <img src="/Users/ross/Desktop/PXL_20241030_200012740.jpg"
+            style="height: auto; width: 100%; border-radius: 25px;">
+        </div>
+        <!-- <div class="col" style="flex: 1; color:white;">
+          <h1>About Me</h1>
+          <p style="font-size: 18pt;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        </div> -->
+      </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
