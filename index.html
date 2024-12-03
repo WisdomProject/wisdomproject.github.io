@@ -24,6 +24,32 @@
       font-style: italic;
     }
 
+    button {
+      background-color: black;
+      border: none;
+      border-radius: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
+      height: 50px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 12pt;
+      border-style: solid;
+      border-width: 2px;
+      color: #fcedb6;
+      border-color: #fcedb6;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background-color: #fcedb6;
+      color: black;
+    }
+
+    .button-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
     .nav {
       padding: 50px;
       display: flex;
@@ -82,6 +108,7 @@
       border-radius: 5px;
       text-underline-offset: 10px;
       flex: 1;
+      cursor: pointer;
     }
 
     .flicker a {
@@ -113,7 +140,41 @@
       background-size: cover; */
       /* background-color: #021229; */
       color: black;
+    }
+
+    .outline-section {
+      color: white;
       flex: 2;
+      padding-top: 25px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
+      padding-right: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-radius: 25px;
+      margin-right: 25px;
+      transition: all 0.3s;
+    }
+
+    .outline-section:hover {
+      background-color: #fcedb6;
+      color: black;
+      cursor: pointer;
+    }
+
+    .outline-section:hover button {
+      border-color: black;
+      background-color: #fcedb6;
+      color: black;
+    }
+
+    .outline-section:hover a {
+      color: black;
+    }
+
+    .outline-section a {
+      color: #fcedb6;
     }
 
     @media (max-width: 1050px) {
@@ -150,9 +211,6 @@
   <div class="nav">
     <h1 style="font-size: 24pt;" class="nav-item">Aadit Narula Gupta</h1>
     <div style="display: flex; align-items: center; justify-content: right;">
-      <div style="color: white; padding: 10px;" class="nav-item1">
-        Pricing
-      </div>
       <div style="color: white; padding: 10px;" class="nav-item2">
         Philosophical Fragments
       </div>
@@ -162,19 +220,18 @@
     <div class="inner-container" style="max-width: 1000px;">
       <div class="header-row">
         <div class="col" style="">
-          <img class="title-image"
-            src="/Users/ross/Desktop/original_bd24a37c-6b29-4acb-b81e-876086457d81_PXL_20240706_184445411.jpg">
+          <img class="title-image" src="static/title1.jpg">
         </div>
         <div class="col" style="position: relative;">
           <h1>
-            Hi! My name is Aadit, and I practice evidence-based coaching and counseling.
+            My name is Aadit, and I practice evidence-based coaching and counselling.
           </h1>
           <h2>
-            My approach is shaped by the scientific method, and the deep joy I find in working with people. I'm very glad you're here!
+            My approach is shaped by the scientific method, and the deep joy I find in working with people. I'm glad
+            you're here!
           </h2>
-          <button
-            style="border: none; border-radius: 25px; padding-left: 25px; padding-right: 25px; height: 50px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12pt; position: absolute; bottom: 0px;">
-            <a href="schedule">Book a free initial consultation →</a>
+          <button style="position: absolute; bottom: 0px;">
+            <a href="schedule" class="button-link">Book a free initial consultation &nbsp; →</a>
           </button>
         </div>
       </div>
@@ -186,21 +243,20 @@
       <div class="row">
         <div class="col flicker">
           <h1>Self</h1>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in some form, by injected humour, or randomised words which don't look even
-            slightly believable. If you are going to use a passage of Lorem Ipsum. </p>
+          <p>Thesis statement, how can you help people improve self? or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem Ipsum. <a href="#blog">Read more →</a></p>
         </div>
         <div class="col flicker">
           <h1>Others</h1>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
-            slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+            slightly believable. If you are going to use a passage of Lorem Ipsum. <a href="#blog">Read more →</a></p>
         </div>
         <div class="col flicker">
           <h1>Career</h1>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration in some form, by injected humour, or randomised words which don't look even
-            slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+            slightly believable. If you are going to use a passage of Lorem Ipsum. <a href="#blog">Read more →</a></p>
         </div>
       </div>
       <div class="row">
@@ -219,39 +275,41 @@
         </div>
       </div>
       <div class="row">
-        <div class="col"
-          style="flex: 1; color: #fcedb6; flex: 2; padding-top: 25px; border-style: solid; border-width: 5px; border-color: #fcedb6; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; border-radius: 25px; margin-right: 25px;">
+        <div class="col outline-section">
           <div style="">
             <h1 style="padding-top: 0px; margin-top: 0px;">$0</h1>
             <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For an initial 45-minute session</p>
             <p style="margin-top: 25px; margin-bottom: 0px; max-width: 800px;">
-              Compatibility between client and coach is important to the work we will be doing together. Schedule an <b>initial consultation</b> so we can discuss your goals, what I do, and whether coaching and counselling might be a good fit.
+              Compatibility between client and coach is important to the work we will be doing together. Schedule an
+              initial consultation so we can discuss your goals, what I do, and whether coaching and counselling
+              might be a good fit.
             </p>
-  
-            <button
-              style="border: none; background-color: #fcedb6; margin-top: 25px; border-radius: 25px; padding-left: 25px; padding-right: 25px; height: 50px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12pt;">
-              <a href="schedule">Book a free initial consultation →</a>
+
+            <button style="margin-top: 50px;">
+              <a href="schedule" class="button-link">Book a free initial consultation →</a>
             </button>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col"
-          style="flex: 1; background-color: #fcedb6; max-width: 300px; width: 300px; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; border-radius: 25px; margin-right: 25px;">
+          style="cursor: pointer; flex: 1; background-color: #fcedb6; max-width: 300px; width: 300px; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; border-radius: 25px; margin-right: 25px;">
           <div style="color: black;">
             <h1 style="padding-top: 0px; margin-top: 0px;">$250</h1>
             <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a 55-minute session</p>
-            <p style="margin-top: 25px; margin-bottom: 0px;">For my <b>typical</b> clients. For Non-US clients, please <a
-                href="mailto:mail@aaditgupta.com">email me</a> to discuss localized rates and payment options.</p>
+            <p style="margin-top: 25px; margin-bottom: 0px;">For my typical clients. For Non-US clients, please
+              <a href="mailto:mail@aaditgupta.com">email me</a> to discuss localized rates and payment options.</p>
           </div>
         </div>
-        <div class="col"
-          style="color: #fcedb6; flex: 2; padding-top: 25px; border-style: solid; border-width: 5px; border-color: #fcedb6; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; border-radius: 25px; margin-right: 25px;">
+        <div class="col outline-section">
           <h1 style="padding-top: 0px; margin-top: 0px;">$50-$250</h1>
           <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a sliding-scale 55-minute session</p>
-          <p style="margin-top: 25px; margin-bottom: 0px;">For my <b>sliding-scale</b> clients. I see clients at less than my typical rate, subject to
-            availability and eligibility. Please <a href="mailto:mail@aaditgupta.com" style="color: #fcedb6;">email me</a> to inquire.</p>
-          <p style="margin-top: 25px; margin-bottom: 0px;">Eligible clients include students, early-career professionals, or those experiencing financial hardship.</p>
+          <p style="margin-top: 25px; margin-bottom: 0px;">I see clients at less
+            than my typical rate, subject to
+            availability and eligibility. Please <a href="mailto:mail@aaditgupta.com">email
+              me</a> to inquire.</p>
+          <p style="margin-top: 25px; margin-bottom: 0px;">Eligible clients include students, early-career
+            professionals, or those experiencing financial hardship.</p>
         </div>
       </div>
 
@@ -315,7 +373,7 @@
       <div class="row">
         <div class="col" style="flex: 1;">
           <div
-            style="width: 100%; height: 100%; border-radius: 5px; background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url(/Users/ross/Desktop/PXL_20241030_200012740.jpg); background-size: cover;">
+            style="width: 100%; height: 100%; border-radius: 5px; background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url(static/about1_full.jpg); background-size: cover;">
           </div>
         </div>
         <div class="col" style="flex: 1;">
