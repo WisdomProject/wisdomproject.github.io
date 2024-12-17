@@ -118,13 +118,15 @@ p {
 
 .flicker a {
     color: #fcedb6;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 .flicker:hover h1 {
     /* background-color: #fcedb6; */
     /* background-color: #021229; */
     /* color: black; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 a {
@@ -133,6 +135,7 @@ a {
 
 .flicker:hover a {
     color: #333;
+    text-decoration: underline;
 }
 
 .flicker:hover {
@@ -194,6 +197,31 @@ a {
 
 .filled-section:hover {
     box-shadow: #fcedb6 0px 0px 20px;
+}
+
+.link-hover {
+    color: #fcedb6;
+    transition: all 0.3s;
+}
+
+.link-hover:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 75px;
+    font-size: 10pt;
+    color: #888;
+}
+
+.footer a {
+    margin: 10px;
+    color: #888;
+}
+
+.footer p {
+    font-size: 10pt;
+    margin: 10px;
 }
 
 @media (max-width: 1050px) {
