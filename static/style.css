@@ -97,8 +97,8 @@ button:hover {
 }
 
 .title-image {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 25px;
 }
 
@@ -210,7 +210,7 @@ a {
 
 .footer {
     margin-top: 75px;
-    font-size: 11pt;
+    font-size: 10pt;
     color: #888;
 }
 
@@ -220,7 +220,7 @@ a {
 }
 
 .footer p {
-    font-size: 11pt;
+    font-size: 10pt;
     margin: 10px;
 }
 
