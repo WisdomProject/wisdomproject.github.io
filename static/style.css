@@ -282,7 +282,6 @@ a {
     transition: all 0.3s;
     cursor: pointer;
     justify-content: end;
-    margin-top: 25px;
     height: 100%;
 }
 
