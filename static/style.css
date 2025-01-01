@@ -3,7 +3,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-weight: 400;
-    font-family: "Cormorant Garamond", serif; /* linotype-didot */
+    font-family: "linotype-didot, Cormorant Garamond", serif; /* linotype-didot */
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
     color: white;
