@@ -58,9 +58,23 @@ button:hover {
 .navitem {
     text-decoration: none;
     transition: all 0.3s;
+    margin-left: 10px;
+    color: white;
+}
+
+.navitem.selected {
+    /* color: #fcedb6; */
+    text-decoration: underline;
+}
+
+.navitem.selected:hover {
+    /* color: #fcedb6; */
+    /* font-weight: 1000; */
+    text-decoration: underline;
 }
 
 .navitem:hover {
+    /* font-weight: 1000; */
     text-decoration: underline;
 }
 
