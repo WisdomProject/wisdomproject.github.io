@@ -21,7 +21,7 @@ h2 {
     font-style: italic;
 }
 
-button {
+.book-button {
     background-color: black;
     border: none;
     border-radius: 25px;
@@ -37,7 +37,7 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+.book-button:hover {
     background-color: #fcedb6;
     color: black;
     box-shadow: #fcedb6 0px 0px 7px;
@@ -147,6 +147,11 @@ p {
     transition: all 0.3s;
 }
 
+.flicker:hover a {
+    color: #333;
+    text-decoration: underline;
+}
+
 .flicker:hover h1 {
     /* background-color: #fcedb6; */
     /* background-color: #021229; */
@@ -156,11 +161,6 @@ p {
 
 a {
     color: #333;
-}
-
-.flicker:hover a {
-    color: #333;
-    text-decoration: underline;
 }
 
 .flicker:hover {
@@ -302,4 +302,52 @@ a {
 .post-container:hover {
     /* background-image: linear-gradient(to top, rgba(252,237,182, 0.9), rgba(252,237,182, 0.5)); */
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.4));
+}
+
+.col.collapsible {
+    cursor: pointer;
+    height: fit-content;
+}
+
+.col.collapsible a {
+    color: #fcedb6;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.col.collapsible:hover a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.col.collapsible:hover {
+    background-color: #fcedb6;
+    color: black;
+}
+
+/* .col.collapsible.active a {
+    color: #333;
+    text-decoration: underline;
+} */
+
+/* .col.collapsible.active {
+    background-color: #fcedb6;
+    color: black;
+} */
+
+.faq-title {
+    margin: 0px;
+    transition: margin 0.2s ease-out;
+
+}
+
+.faq-content {
+    overflow: hidden;
+    margin: 0px;
+    max-height: 0px;
+    transition: max-height 0.2s ease-out;
+}
+
+.col.collapsible.active .faq-title {
+    margin-bottom: 25px;
 }
