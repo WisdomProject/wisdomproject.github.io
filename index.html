@@ -53,12 +53,14 @@
             </h2>
           </div>
 
-          <div>
-            <button class="book-button" style="margin-top: 10px;">
-              <a target="_blank" rel="noopener noreferrer"
-                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp"
-                class="button-link">Book a free initial consultation &nbsp; &#8594;</a>
-            </button>
+          <div style="margin-top: 10px;">
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp"
+              class="button-link">
+              <button class="book-button">
+                Book a free initial consultation &nbsp; &#8594;
+              </button>
+            </a>
           </div>
         </div>
 
@@ -73,7 +75,7 @@
       </div>
 
       <div class="row">
-        <div class="col flicker">
+        <div class="col flicker" onclick="window.location='self.html'">
           <h1>Self</h1>
           <div class="content-text">
             Calm, presence, self-connection, and mastery over one's emotions are essential components of a good life.
@@ -91,7 +93,8 @@
             <a href="self.html">Read more &#8594;</a>
           </div>
         </div>
-        <div class="col flicker">
+        </a>
+        <div class="col flicker" onclick="window.location='others.html'">
           <h1>Others</h1>
           <div class="content-text">The European Psychoanalyst Sigmund Freud believed that of all forms of suffering,
             that which we feel in our relationships with others is the most devastating. Indeed, we all deserve
@@ -110,7 +113,7 @@
             <a href="others.html">Read more &#8594;</a>
           </div>
         </div>
-        <div class="col flicker">
+        <div class="col flicker" onclick="window.location='career.html'">
           <h1>Career</h1>
 
           <div class="content-text">In an ever increasing number of societies around our planet, the 'problem of plenty'
@@ -128,7 +131,7 @@
       </div>
       <div style="height: 25px;"></div>
       <div class="row">
-        <div class="col flicker">
+        <div class="col flicker" onclick="window.location = 'iat_approach.html'">
           <!-- TODO(Aadit): The disclaimer about there being many viewpoints, comment below, should be present in the whole text, but not here.-->
           <!-- <b>On my Coaching & Counselling method:</b> With a subject as complex and consequential as life guidance, it is no surprise that there are 
             almost as many views on what the <i>correct</i> approach is as there are those offering to provide them—and that those viewpoints 
@@ -225,7 +228,7 @@
 
       <div class="row">
 
-        <div class="col outline-section">
+        <div class="col outline-section" onclick="window.open('https:\/\/calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp', '_blank');">
           <div>
             <h1 style="padding-top: 0px; margin-top: 0px;">$0</h1>
             <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For an initial 45-minute session</p>
@@ -235,11 +238,15 @@
               might be a good fit.
             </p>
 
-            <button class="book-button" style="margin-top: 50px;">
+            <div style="margin-top: 50px;">
               <a target="_blank" rel="noopener noreferrer"
                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp"
-                class="button-link">Book a free initial consultation &nbsp; &#8594;</a>
-            </button>
+                class="button-link">
+                <button class="book-button">
+                  Book a free initial consultation &nbsp; &#8594;
+                </button>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -247,7 +254,7 @@
 
       <div class="row" style="margin-top: 25px;">
 
-        <div class="col filled-section extra-mobile-spacing">
+        <div class="col filled-section extra-mobile-spacing" onclick="window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
           <div class="inner-col" style="color: black;">
             <h1 style="padding-top: 0px; margin-top: 0px;">$250</h1>
             <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a 55-minute session</p>
@@ -257,7 +264,7 @@
             </p>
           </div>
         </div>
-        <div class="col outline-section" id="sliding-scale">
+        <div class="col outline-section" id="sliding-scale" onclick="window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
           <h1 style="padding-top: 0px; margin-top: 0px;">$50-$250</h1>
           <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a sliding-scale 55-minute session</p>
           <p style="margin-top: 25px; margin-bottom: 0px;">I see clients at less
@@ -411,8 +418,10 @@
 
         <div class="col collapsible" style="flex: 1;">
           <p class="faq-title">In a nutshell, what is the goal of our work together?</p>
-          <p class="faq-content">To do the subconscious healing work and practical skills-building required to develop thriving, secure, and 
-            deep bonds with others; a healthy, compassionate, and illuminated relationship to yourself; and to equip you to deal with the inevitable difficulties of living even 
+          <p class="faq-content">To do the subconscious healing work and practical skills-building required to develop
+            thriving, secure, and
+            deep bonds with others; a healthy, compassionate, and illuminated relationship to yourself; and to equip you
+            to deal with the inevitable difficulties of living even
             the best and most successful life with calm, charm, and wisdom.</p>
         </div>
 

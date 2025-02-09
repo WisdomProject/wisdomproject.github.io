@@ -36,6 +36,7 @@ h2 {
     color: #fcedb6;
     border-color: #fcedb6;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .book-button:hover {
@@ -145,7 +146,22 @@ p {
 .flicker a {
     color: #fcedb6;
     text-decoration: none;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
+}
+
+.flicker .invisible-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flicker:hover .invisible-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.invisible-link {
+    color: inherit;
+    text-decoration: none;
 }
 
 .flicker:hover a {
@@ -293,7 +309,7 @@ a {
     height: 100%;
 }
 
-.post-container:hover {
+.post-container.hoverable:hover {
     /* background-image: linear-gradient(to top, rgba(252,237,182, 0.9), rgba(252,237,182, 0.5)); */
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.4));
 }
