@@ -3,7 +3,8 @@ body {
     padding: 0px;
     margin: 0px;
     font-weight: 400;
-    font-family: "linotype-didot, Cormorant Garamond", serif; /* linotype-didot */
+    font-family: "linotype-didot, Cormorant Garamond", serif;
+    /* linotype-didot */
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
     color: white;
@@ -152,13 +153,6 @@ p {
     text-decoration: underline;
 }
 
-.flicker:hover h1 {
-    /* background-color: #fcedb6; */
-    /* background-color: #021229; */
-    /* color: black; */
-    /* text-decoration: underline; */
-}
-
 a {
     color: #333;
 }
@@ -283,7 +277,7 @@ a {
     #sliding-scale {
         margin-left: 0px;
     }
-    
+
 }
 
 .post-container {
@@ -330,7 +324,7 @@ a {
 .faq-title {
     margin: 0px;
     transition: margin 0.2s ease-out;
-
+    font-weight: 800;
 }
 
 .faq-content {
