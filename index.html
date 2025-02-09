@@ -333,38 +333,23 @@
             use in also serving and supporting others. </p>
         </div>
 
-        <script>
-          var coll = document.getElementsByClassName("collapsible");
-          var i;
-          
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.getElementsByClassName("faq-content")[0]
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 
-              // var activeDivs = document.getElementsByClassName("active")
-              // console.log(activeDivs)
-              // for (j=0; j<activeDivs.length; j++) {
-              //   console.log(j)
-              //   console.log(activeDivs[j])
-              //   if (activeDivs[j] == this) {
-              //     continue
-              //   }
-              //   var content = activeDivs[j].getElementsByClassName("faq-content")[0]
-              //   content.style.maxHeight = null;
-              //   activeDivs[j].classList.toggle("active")
-              // }
-
-              this.classList.toggle("active");
-              var content = this.getElementsByClassName("faq-content")[0]
-              if (content.style.maxHeight){
-                content.style.maxHeight = null;
-              } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-              } 
-            });
-          }
-          </script>
-
-      </div>
 
       <div class="row">
         <div class="col" style="flex: 1; flex-direction: row; justify-content: center; text-align: center;">

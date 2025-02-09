@@ -307,6 +307,8 @@ a {
 .col.collapsible {
     cursor: pointer;
     height: fit-content;
+    border-radius: 5px;
+    text-underline-offset: 5px;
 }
 
 .col.collapsible a {
@@ -324,16 +326,6 @@ a {
     background-color: #fcedb6;
     color: black;
 }
-
-/* .col.collapsible.active a {
-    color: #333;
-    text-decoration: underline;
-} */
-
-/* .col.collapsible.active {
-    background-color: #fcedb6;
-    color: black;
-} */
 
 .faq-title {
     margin: 0px;
