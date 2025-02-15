@@ -3,12 +3,47 @@
 
 <head>
     <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            background-color: #fcedb6;
+            color: black;
+        }
+
+        .navitem {
+            color: black;
+        }
+
+        .post-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            padding-left: 25px;
+
+            border-radius: 10px;
+            border-color: #fcedb6;
+            border-width: 1px;
+            border-style: solid;
+
+            /* background-image: linear-gradient(to top, rgba(252, 237, 182, 1.0), rgba(252, 237, 182, 0.4)); */
+            background-image: none;
+            background-color: rgba(252, 237, 182, 0.8);
+            transition: all 0.3s;
+            cursor: pointer;
+            justify-content: end;
+            height: 100%;
+        }
+
+        .row.title {
+            margin-top: 25px;
+        }
+
+    </style>
     <title>Aadit Narula Gupta</title>
 </head>
 
 <body>
     <div class="nav">
-        <h1 style="font-size: 24pt;" class="nav-item"><a href="index.html" style="color: white; margin-left:0px;"
+        <h1 style="font-size: 24pt;" class="nav-item"><a href="index.html" style="margin-left:0px;"
                 class="navitem">Aadit Narula Gupta</a></h1>
         <div style="display: flex; align-items: center; justify-content: right;">
             <div style="padding: 10px;" class="nav-item2">
@@ -18,23 +53,22 @@
         </div>
     </div>
     <div class="container">
-        <div class="inner-container" style="max-width: 1000px; width: 100%;">
+        <div class="inner-container" style="max-width: 1200px; width: 100%;">
 
             <div class="row">
                 <div class="col" style="flex: 1;">
                     <div
-                        style="border-radius: 25px; background-image: url('static/alhambra-wall-tiles.jpg'); min-height: 500px;">
-                        <div class="post-container">
+                        style="border-color: #fcedb6; border-style: none; border-radius: 10px; background-image: url('static/alhambra-wall-tiles.jpg'); min-height: 500px;">
+                        <div class="post-container" style="padding-left: 200px;">
                             <h1>On Methodology</h1>
-                            <p style="font-size: 18pt;">3 December, 2024</p>
+                            <p style="font-size: 18pt; margin-top: 10px;">3 December, 2024</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-
-                <div class="col" style="flex: 1;">
+            <div class="row" style="padding-left: 200px; padding-right: 200px;">
+                <div class="col" style="flex: 1; margin-top: 0px; padding-top: 0px; max-width: 800px; text-align: justify;">
                     <p style="font-size: 18pt;"> <b>With a subject as complex and consequential as life guidance, it is no surprise that there are 
                         almost as many views on what the <i>correct</i> approach is as there are those offering to provide them—and that those viewpoints 
                         are debated furiously.</b> My work is very different from conventional coaching, psychotherapy, or counselling, and is characterized by three pillars:
@@ -187,4 +221,6 @@
     <div style="height: 200px;"></div>
 </body>
 
+
+<!-- TODO(ross): add footers to these pages. -->
 </html>
