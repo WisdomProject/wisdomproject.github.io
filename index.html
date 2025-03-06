@@ -361,16 +361,17 @@
             and conscious parenting, with wisdom, empathy, and the exactitude of
             a skilled scientist.
             <br>
-            <br><!-- TODO(Ross): Why isn't this showing up on the site?-->
-            <p class="faq-content"><a href="https://www.besselvanderkolk.com/" target="_blank">Dr. Bessel van der Kolk: &#8594;</a> 
+            <br>
+            <a href="https://www.besselvanderkolk.com/" target="_blank">Dr. Bessel van der Kolk: &#8594;</a> 
               Dr. van der Kolk's interest in trauma began when he was a staff psychiatrist at the Boston Veterans Administration's Outpatient Clinic,
               running up against major deficiencies in the way American instutitions and academics dealt with the treatment of post-traumatic stress
               in the country's ex-military population. Since then, Dr. van der Kolk has made major contributions to the field, primarily by popularizing
               the importance of a psychosocial and emotional understanding of trauma, and through his founding of the Trauma Research Foundation—one
               of the most influential catalysts for scientific research in this field. 
-            Dr. Bessel van der Kolk, Dr. Thais Gibson, Dr. Stephen Porges, Dr. Dante Cicchetti, Dr. Antonio Damasio,
+            <br>
+            <br>
+            I also draw from the work of Dr. Thais Gibson, Dr. Stephen Porges, Dr. Dante Cicchetti, Dr. Antonio Damasio,
             Alain de Botton, Dr. Richard Schwartz, and Dr. Ron Siegel, among others.
-          </p>
         </div>
 
         <div class="col collapsible" style="flex: 1;">
@@ -448,6 +449,7 @@
               return;
             }
             this.classList.toggle("active");
+            console.log(this.classList, this.getElementsByClassName("faq-content"))
             var content = this.getElementsByClassName("faq-content")[0]
             if (content.style.maxHeight) {
               content.style.maxHeight = null;
