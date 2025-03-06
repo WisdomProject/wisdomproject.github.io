@@ -3,7 +3,8 @@ body {
     padding: 0px;
     margin: 0px;
     font-weight: 400;
-    font-family: "linotype-didot, Cormorant Garamond", serif;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     /* linotype-didot */
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
