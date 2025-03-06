@@ -292,6 +292,12 @@ a {
         margin-left: 0px;
     }
 
+    .inner-container {
+        max-width: 1000px;
+        width: 100%;
+        padding-top: 0px;
+    }
+
 }
 
 .post-container {
