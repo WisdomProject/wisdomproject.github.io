@@ -45,7 +45,7 @@ h2 {
 
 .button-link {
     color: inherit;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .nav {
@@ -152,23 +152,8 @@ mark {
 
 .flicker a {
     color: #fcedb6;
-    text-decoration: none;
+    /* text-decoration: none; */
     /* transition: all 0.3s; */
-}
-
-.flicker .invisible-link {
-    color: inherit;
-    text-decoration: none;
-}
-
-.flicker:hover .invisible-link {
-    color: inherit;
-    text-decoration: none;
-}
-
-.invisible-link {
-    color: inherit;
-    text-decoration: none;
 }
 
 .flicker:hover a {
@@ -333,7 +318,7 @@ a {
 
 .col.collapsible a {
     color: #fcedb6;
-    text-decoration: none;
+    /* text-decoration: none; */
     transition: all 0.3s;
 }
 
