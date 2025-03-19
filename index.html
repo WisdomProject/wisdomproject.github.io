@@ -17,6 +17,10 @@
   gtag('js', new Date());
 
   gtag('config', 'G-Q17CBDRS42');
+
+  function click_event(event_name) {
+    gtag('event', event_name, {});
+  }
 </script>
 
 <body>
@@ -53,7 +57,7 @@
             </h2>
           </div>
 
-          <div style="margin-top: 10px;">
+          <div style="margin-top: 10px;" onclick="click_event('click_book_header')">
             <a target="_blank" rel="noopener noreferrer"
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp"
               class="button-link">
@@ -75,7 +79,7 @@
       </div>
 
       <div class="row">
-        <div class="col flicker" onclick="window.location = 'iat_approach.html'">
+        <div class="col flicker" onclick="click_event('click_methodology'); window.location = 'iat_approach.html'">
           <!-- TODO(Aadit): The disclaimer about there being many viewpoints, comment below, should be present in the whole text, but not here.-->
           <!-- <b>On my Coaching & Counselling method:</b> With a subject as complex and consequential as life guidance, it is no surprise that there are 
             almost as many views on what the <i>correct</i> approach is as there are those offering to provide them—and that those viewpoints 
@@ -100,7 +104,7 @@
       </div>
 
       <div class="row">
-        <div class="col flicker collapsible" style="flex:4;">
+        <div class="col flicker collapsible" style="flex:4;" onclick="click_event('click_others');">
           <h1>Relationships with Others</h1>
           <div class="content-text">
             <p style="margin-top:0px;">
@@ -132,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="col flicker collapsible" style="flex: 4;">
+        <div class="col flicker collapsible" style="flex: 4;" onclick="click_event('click_self');">
           <h1>Relationship to Self</h1>
           <div class="content-text">
             <p style="margin-top:0px;">
@@ -165,7 +169,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col flicker collapsible">
+        <div class="col flicker collapsible" onclick="click_event('click_career');">
           <h1>Career & Finances</h1>
           <div class="content-text">
             <p style="margin-top: 0px;">
@@ -287,7 +291,7 @@
       <div class="row">
 
         <div class="col outline-section"
-          onclick="window.open('https:\/\/calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp', '_blank');">
+          onclick="click_event('click_book_pricing'); window.open('https:\/\/calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp', '_blank');">
           <div>
             <h1 style="padding-top: 0px; margin-top: 0px;">$0</h1>
             <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For an initial 45-minute session</p>
@@ -314,7 +318,7 @@
       <div class="row" style="margin-top: 25px;">
 
         <div class="col filled-section extra-mobile-spacing"
-          onclick="window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
+          onclick="click_event('click_mail_pricing'); window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
           <div class="inner-col" style="padding: 0px; color: black;">
             <!-- The height of this row isn't the same as above. -->
             <h1 style="padding-top: 0px; margin-top: 0px;">$250</h1>
@@ -326,7 +330,7 @@
           </div>
         </div>
         <div class="col outline-section" id="sliding-scale"
-          onclick="window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
+          onclick="click_event('click_mail_pricing_sliding_scale'); window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
           <h1 style="padding-top: 0px; margin-top: 0px;">$50-$200</h1>
           <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a sliding-scale one hour session
           </p>
@@ -349,7 +353,7 @@
 
       <div class="row">
         <!-- TODO(Aadit): Add an FAQ describing what coaching is like the one for therapist. It should be similar to the one below and also link to your longer writeup. -->
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_are_you_a_therapist');">
           <p class="faq-title">Are you a 'therapist'? Do you offer psychotherapy?</p>
           <p class="faq-content">In the United States, a 'psychotherapist' is an individual who has been licensed by
             their State to practice a specific form of
@@ -365,7 +369,7 @@
           </p>
         </div>
 
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_pursue_licensure');">
           <p class="faq-title">Why did you choose not to pursue psychotherapeutic licensure?</p>
           <p class="faq-content">In short, because degree programs that terminate in licensure do not necessarily
             equip
@@ -421,7 +425,7 @@
       </div>
 
       <div class="row">
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_inspiration');">
           <p class="faq-title">Whose academic or intellectual work are you particularly inspired by?</p>
           <p class="faq-content"><a href="https://drgabormate.com/" target="_blank">Dr. Gabor Maté: &#8594;</a> One of
             the first Western thinkers to conclusively link
@@ -450,7 +454,7 @@
             Alain de Botton, Dr. Richard Schwartz, and Dr. Ron Siegel, among others.
         </div>
 
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_how_many_sessions');">
           <p class="faq-title">How many sessions will we need together?</p>
           <p class="faq-content">The answer is highly dependent on your goals, and where you are on your journey
             towards where you want to be across the major areas of your life.
@@ -482,8 +486,8 @@
       </div>
 
       <div class="row">
-        <div class="col collapsible" style="flex: 1;">
-          <p class="faq-title">Why did you decide become a counsellor and coach?</p>
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_why_did_you_decide');">
+          <p class="faq-title">Why did you decide to become a counsellor and coach?</p>
           <p class="faq-content">I emerged into young adulthood suffering from depression, anxiety, a lack of
             authentic
             direction in my career, and painful patterns in my
@@ -503,7 +507,7 @@
           </p>
         </div>
 
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_what_is_the_goal');">
           <p class="faq-title">In a nutshell, what is the goal of our work together?</p>
           <p class="faq-content">To do the subconscious healing work and practical skills-building required to develop
             thriving, secure, and
@@ -520,14 +524,14 @@
 
       <div class="row">
 
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_in_person_sessions');">
           <p class="faq-title">Do you offer in-person sessions?</p>
           <p class="faq-content">
             Not at this time. I work with clients remotely.
           </p>
         </div>
 
-        <div class="col collapsible" style="flex: 1;">
+        <div class="col collapsible" style="flex: 1;" onclick="click_event('click_faq_outside_nyc');">
           <p class="faq-title">Do you see clients outside of New York City?</p>
           <p class="faq-content">
             Yes. I work with clients from across the world, remotely.
@@ -565,10 +569,10 @@
           <h1 style="margin-top: 85px; font-size: 18pt; width: fit-content;">More Questions? Email me with 'coaching'
             in
             the subject line at <a class="link-hover" style="cursor: pointer;"
-              href="mailto:mail@aaditgupta.com?subject=Question about coaching" target="blank_">mail@aaditgupta.com
+              href="mailto:mail@aaditgupta.com?subject=Question about coaching" target="blank_" onclick="click_event('click_mail_footer');">mail@aaditgupta.com
               &#8594;</a><br> Or <a class="link-hover" style="cursor: pointer;"
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xOH74i485UvmymfomVA8KvwkXB7SS8N_i6UJio4B3gjan9PkYDdmTSF9nadogweCsQjT-CoVp"
-              target="blank_">book a free initial consultation &#8594;</a></h1>
+              target="blank_" onclick="click_event('click_book_footer');">book a free initial consultation &#8594;</a></h1>
         </div>
       </div>
     </div>
