@@ -350,6 +350,10 @@ a {
     transition: all 0.2s ease-out;
 }
 
+.read-more-link {
+    pointer-events: none;
+}
+
 .col.collapsible.active .read-more-link {
     display: none;
 }
