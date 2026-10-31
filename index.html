@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
+  <meta charset="utf-8">
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
 
   <link rel="stylesheet" href="static/style.css">
@@ -45,23 +46,24 @@
         <div class="col" style="flex: 2;">
           <div style="flex: 1;">
             <h1>
-              Hi! I'm Aadit. I help people find fulfillment in love, work, and life.
+              Hi! I'm Aadit.
             </h1>
             <h2>
-              My coaching and counselling practice is informed by findings of modern neuroscientific research and
-              developmental psychology;
-              a focus on root cause rather than symptom or sign; and the joy I find supporting my clients as they ask
-              and answer difficult questions about life.
-              <b>I'm very glad you're here!</b>
+              I offer philosophical counselling—working with intellectual, driven individuals across
+              cultures and disciplines to resolve deep-seated relational and emotional patterns at their root.
+              <br><br>
+              My practice bridges empirical neuroscience and Integrated Attachment Theory with depth psychology and
+              East–West philosophical inquiry—combining wide-ranging conceptual exploration with targeted, subconscious
+              transformation.
             </h2>
           </div>
 
-          <div style="margin-top: 10px;" onclick="click_event('click_book_header')">
+          <div style="margin-top: 10px;" onclick="click_event('click_mail_consultation_header')">
             <a target="_blank" rel="noopener noreferrer"
-              href="https://calendar.app.google/8emsCR8bSoLQxZsWA"
+              href="mailto:mail@aaditgupta.com?subject=Free initial coaching consultation"
               class="button-link">
               <button class="book-button">
-                Book a free initial consultation &nbsp; &#8594;
+                Email me to book a free consultation &nbsp; &#8594;
               </button>
             </a>
           </div>
@@ -260,25 +262,28 @@
 
       <div class="row">
 
-        <div class="col outline-section"
-          onclick="click_event('click_book_pricing'); window.open('https:\/\/calendar.app.google/6yqnUYGW9zR1o2288', '_blank');">
-          <div>
-            <h1 style="padding-top: 0px; margin-top: 0px;">$0</h1>
-            <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For an initial 45-minute session</p>
-            <p style="margin-top: 25px; margin-bottom: 0px; max-width: 800px;">
-              Schedule an
-              initial consultation so we can discuss your goals, what I do, and whether coaching and counselling
-              might be a good fit for you.
-            </p>
-
-            <div style="margin-top: 50px;">
-              <a target="_blank" rel="noopener noreferrer"
-                href="https://calendar.app.google/8emsCR8bSoLQxZsWA"
-                class="button-link">
-                <button class="book-button">
-                  Book a free initial consultation &nbsp; &#8594;
-                </button>
-              </a>
+        <div class="col filled-section collapsible" onclick="click_event('click_pricing_rates');">
+          <div class="inner-col" style="padding: 0px; color: black;">
+            <h1>$300</h1>
+            <p class="pricing-unit">per hour</p>
+            <p class="pricing-description">This is my standard fee. I also offer reduced rates, starting at $75, for clients who cannot afford it.</p>
+            <a class="read-more-link" href="#">See all rates &#8594;</a>
+            <div class="faq-content">
+              <div class="row pricing-rates">
+                <div class="pricing-rate">
+                  <p class="pricing-rate-name">Supporter</p>
+                  <h1>$450&ndash;500</h1>
+                  <p class="pricing-unit">per hour</p>
+                  <p class="pricing-description">If you are able to pay more, this rate funds reduced-fee places and my free public work.</p>
+                </div>
+                <div class="pricing-rate">
+                  <p class="pricing-rate-name">Reduced</p>
+                  <h1>$75&ndash;150</h1>
+                  <p class="pricing-unit">per hour</p>
+                  <p class="pricing-description">If my standard fee is beyond what you can afford, please <a href="mailto:mail@aaditgupta.com?subject=Reduced-fee coaching place" target="blank_">email me</a>. I keep a set number of reduced-fee places.</p>
+                </div>
+              </div>
+              <p class="pricing-note">We can talk through which rate is right for you in your free initial consultation.</p>
             </div>
           </div>
         </div>
@@ -287,20 +292,29 @@
 
       <div class="row" style="margin-top: 25px;">
 
-        <div class="col filled-section extra-mobile-spacing"
-          onclick="click_event('click_mail_pricing'); window.open('mailto:mail@aaditgupta.com?subject=Question about coaching', '_blank');">
-          <div class="inner-col" style="padding: 0px; color: black;">
-            <!-- The height of this row isn't the same as above. -->
-            <h1 style="padding-top: 0px; margin-top: 0px;">$50 — 150</h1>
-            <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For a one hour session</p>
-            <p style="margin-top: 25px; margin-bottom: 0px;">$150 an hour is my standard fee in order to pay my bills in New York City,
-              however, if that is beyond what you can afford, please let me know. I have limited availability for sliding scale clients. 
-               If this applies to you, please don't hesitate to book a free initial consultation. Or, send me an email at <a href="mailto:mail@aaditgupta.com?subject=Question about coaching"
-              target="blank_">mail@aaditgupta.com</a>  and we can discuss finances further.
+        <div class="col outline-section"
+          onclick="click_event('click_mail_consultation'); if (!event.target.closest('a')) window.open('mailto:mail@aaditgupta.com?subject=Free initial coaching consultation', '_blank');">
+          <div>
+            <h1 style="padding-top: 0px; margin-top: 0px;">$0</h1>
+            <p style="margin-top: 0px; font-style: italic; margin-bottom: 0px;">For an initial 45-minute session</p>
+            <p style="margin-top: 25px; margin-bottom: 0px; max-width: 800px;">
+              Email me at <a href="mailto:mail@aaditgupta.com?subject=Free initial coaching consultation"
+              target="blank_">mail@aaditgupta.com</a> to schedule an
+              initial consultation so we can discuss your goals, what I do, and whether coaching and counselling
+              might be a good fit for you.
             </p>
+
+            <div style="margin-top: 50px;">
+              <a target="_blank" rel="noopener noreferrer"
+                href="mailto:mail@aaditgupta.com?subject=Free initial coaching consultation"
+                class="button-link">
+                <button class="book-button">
+                  Email me to book a free consultation &nbsp; &#8594;
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-      
 
       </div>
 
@@ -530,8 +544,8 @@
             the subject line at <a class="link-hover" style="cursor: pointer;"
               href="mailto:mail@aaditgupta.com?subject=Question about coaching" target="blank_" onclick="click_event('click_mail_footer');">mail@aaditgupta.com
               &#8594;</a><br> Or <a class="link-hover" style="cursor: pointer;"
-              href="https://calendar.app.google/8emsCR8bSoLQxZsWA"
-              target="blank_" onclick="click_event('click_book_footer');">book a free initial consultation &#8594;</a></h1>
+              href="mailto:mail@aaditgupta.com?subject=Free initial coaching consultation"
+              target="blank_" onclick="click_event('click_mail_consultation_footer');">email me to book a free consultation &#8594;</a></h1>
         </div>
       </div>
     </div>
